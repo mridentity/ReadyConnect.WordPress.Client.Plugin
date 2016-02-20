@@ -61,12 +61,12 @@ class OpenID_Connect_Generic_Client {
 	function validate_authentication_request( $request ){
 		// look for an existing error of some kind
 		if ( isset( $request['error'] ) ) {
-			return new WP_Error( 'unknown-error', 'An unknown error occurred.', $request );
+			return new WP_Error( 'unknown-error', 'Access denied.', $request );
 		}
 
 		// make sure we have a legitimate authentication code and valid state
 		if ( ! isset( $request['code'] ) ) {
-			return new WP_Error( 'no-code', 'No authentication code present in the request.', $request );
+			return new WP_Error( 'no-code', 'Access denied.', $request );
 		}
 
 		// check the client request state 
