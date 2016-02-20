@@ -3,18 +3,19 @@
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simple client that provides SSO or opt-in authentication against a generic OAuth2 Server implementation.
+A simple WordPress plugin that allows WordPress users to sign-in via ReadyConnect.
 
 ### Description
 
-This plugin allows to authenticate users against OpenID Connect OAuth2 API with Authorization Code Flow.
-Once installed, it can be configured to automatically authenticate users (SSO), or provide a "Login with OpenID Connect"
+This plugin allows WordPress to authenticate users against via ReadyConnect.
+Once installed, it can be configured to authenticate users or provide a "Login with ReadyConnect"
 button on the login form. After consent has been obtained, an existing user is automatically logged into WordPress, while 
 new users are created in WordPress database.
 
 Much of the documentation can be found on the Settings > OpenID Connect Generic dashboard page.
 
 Originally based on the plugin provided by shirounagi - https://wordpress.org/plugins/generic-openid-connect/
+Improved by daggerhart https://github.com/daggerhart/openid-connect-generic
 
 ### Installation
 
